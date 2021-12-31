@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+#Hello World script
+#
+#variables
+var=4
+echo Hello world
+#Variable setting
+echo Variable = $var

@@ -1,0 +1,10 @@
+#!/bin/bash
+echo The first argument is $1
+echo The first argument is $2
+echo The first argument is $3
+
+echo \$ $$ PID of the script
+echo \# $# count arguments
+echo \? $? last return code
+echo \* $* all the arguments
+echo this script is called $0
