@@ -1,0 +1,20 @@
+Linux command line Basics :-
+
+
+1. To become root
+   sudo -i
+
+2. To find the user part of which all groups
+   groups saif
+   saif : saif adm cdrom sudo dip plugdev lpadmin sambashare
+
+3. to add user to sudoers list 
+   usermod -aG sudo saif
+
+4. Exit root mode
+   exit
+
+5. To view the hidden files in linux directories
+   ls -a
+
+6. 

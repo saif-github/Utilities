@@ -1,0 +1,55 @@
+create a new repository on the command line
+
+echo "# Utilities" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:saif-github/Utilities.git
+git push -u origin main
+
+
+or push an existing repository from the command line
+
+git remote add origin git@github.com:saif-github/Utilities.git
+git branch -M main
+git push -u origin main
+
+
+Connecting to GitHub with SSH
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+
+Generating a new SSH key
+
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
+EX:
+ssh-keygen -t ed25519 -C "saifullabaig785@gmail.com"
+
+
+
+
+This creates a new SSH key, using the provided email as a label.
+
+> Generating public/private algorithm key pair.
+
+    When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
+> Enter a file in which to save the key (/home/you/.ssh/algorithm): [Press enter]
+
+
+At the prompt, type a secure passphrase. For more information, see "Working with SSH key passphrases."
+
+> Enter passphrase (empty for no passphrase): [Type a passphrase]
+> Enter same passphrase again: [Type passphrase again]
+
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+
+Copy the SSH public key to your clipboard.
+
+If your SSH public key file has a different name than the example code, modify the filename to match your current setup. When copying your key, don't add any newlines or whitespace.
+
+$ cat ~/.ssh/id_ed25519.pub
+
+
