@@ -17,4 +17,33 @@ Linux command line Basics :-
 5. To view the hidden files in linux directories
    ls -a
 
-6. 
+6. List all the c program files in PWD
+   find . -name "*.c" -ls
+   Ex : find /proj/PICTOR/workspace/Saif_ub/QLCPROTO/ -name create_hs.sh\
+
+7. list and scales file sizes and directory sizes into KB, MB, GB, or TB when the file or directory size is larger than 1024 bytes.
+   ls -l -h
+
+8. Create files using Cat command
+
+	cat << EOF > file1.txt
+	Some line
+	Some other line
+	EOF
+
+9. Create files using echo command
+	echo line one > myfile
+	echo line two >> myfile
+	echo line three >> myfile
+
+10. Create a bash script with .sh extention
+	step 1 : Example script to find all the C programs files (list_c.sh)
+		#!/bin/bash
+		find . -name "*.c" -ls
+
+	step 2 : make the script operational by using command
+		chmod +x list_c.sh
+
+	step 3 : execute the script 
+		./list_c.sh
+
