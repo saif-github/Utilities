@@ -47,3 +47,51 @@ Linux command line Basics :-
 	step 3 : execute the script 
 		./list_c.sh
 
+11. To check shells scripts supported in current linux distro
+    cat /etc/shells
+
+	/bin/sh
+	/bin/dash
+	/bin/bash
+	/bin/rbash
+
+12. Create and enable .bashrc or .bash_profile
+	step 1 : Open terminal and enter
+		touch ~/.bashrc
+
+	step 2 : To edit the file use - use sample bashrc to begin 
+		nano ~/.bashrc
+
+	step 3 : To immediately enable the changes in .bashrc
+		source ~/.bashrc
+
+	step 4 : use ls -a or alias mentioned in bash sample script to verify in home directory.
+		ls -a
+		la
+
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
