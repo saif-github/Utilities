@@ -69,13 +69,64 @@ Linux command line Basics :-
 		ls -a
 		la
 
+13. To get a list of presently exported environment variables,
+	env
+    To get the complete set of variables.
+	set
+    To display any ENV
+	echo $NAME
+    To set user wide ENVs
+	Step 1: Open the terminal. 
+	Step 2: 
+		sudo vi ~/.bashrc
+
+	Step 3:Enter password. 
+	Step 4:Add variable in the file opened.  
+
+	export NAME=Value
+
+	Step 5: Save and close the file. 
+	Step 6:  
+		source ~/.bashrc 
 		
-	
+   To set system wide ENVs
+	Step 1: Open the terminal. 
+	Step 2: 
+		sudo -H vi /etc/environment
 
+	Step 3:Enter password. 
+	Step 4:Add variable in the file opened.  
 
+	NAME=Value
 
+	Step 5: Save and close the file. 
+	Step 6: Logout and Login again. 
 
+   Some commonly used ENVs in Linux
 
+	$USER: Gives current user's name.
+	$PATH: Gives search path for commands.
+	$PWD: Gives the path of present working directory.
+	$HOME: Gives path of home directory.
+	$HOSTNAME: Gives name of the host.
+	$LANG: Gives the default system language.
+	$EDITOR: Gives default file editor.
+	$UID: Gives user ID of current user.
+	$SHELL: Gives location of current user's shell program.
+
+   unset environment variables
+	unset NAME
+	or
+	NAME=''
+	or
+	export -n NAME
+
+   An environment variable must be exported to propagate its value to a child process.
+	VAR=value ; export VAR
+	export VAR=value
+
+   You can also make one or more environment variables take effect for just one command:
+	LD_LIBRARY_PATH=$PWD DEBUG=3 ./foobar
 
 
 
