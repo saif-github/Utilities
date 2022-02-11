@@ -128,6 +128,13 @@ Linux command line Basics :-
    You can also make one or more environment variables take effect for just one command:
 	LD_LIBRARY_PATH=$PWD DEBUG=3 ./foobar
 
+14. Customizing the Command Line Prompt
+
+Customizing the command line prompt is as simple as modifying the value of the environment variable PS1. 
+For example, to set it to display the hostname, user and current directory:  PS1="\h:\u:\w>"
+
+hylcufsdev06:sbaig:/proj/PICTOR/workspace/sbaig/QLCPROTO>
+
 
 
 
