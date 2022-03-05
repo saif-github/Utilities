@@ -130,11 +130,26 @@ Linux command line Basics :-
 
 14. Customizing the Command Line Prompt
 
-Customizing the command line prompt is as simple as modifying the value of the environment variable PS1. 
-For example, to set it to display the hostname, user and current directory:  PS1="\h:\u:\w>"
+	Customizing the command line prompt is as simple as modifying the value of the environment variable PS1. 
+	For example, to set it to display the hostname, user and current directory:  PS1="\h:\u:\w>"
 
-hylcufsdev06:sbaig:/proj/PICTOR/workspace/sbaig/QLCPROTO>
+	hylcufsdev06:sbaig:/proj/PICTOR/workspace/sbaig/QLCPROTO>
 
+15. list all the alias avalable to user
+
+	alias
+
+16. Find the file in directory and print on console
+
+	find . -type f -name "HAL_CMDT_N48R.h" -print
+
+17. Find the string recursively in files in current director
+
+	grep -r string *
+
+18. Find the string in file passed
+
+	grep -irn string test.sh
 
 
 
