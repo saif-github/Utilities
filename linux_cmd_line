@@ -151,6 +151,161 @@ Linux command line Basics :-
 
 	grep -irn string test.sh
 
+19. Many basic commands and utilities are the same in Linux and other UNIX-like operating systems. While there may be some variation in some of the options and syntax, the purpose remains the same. Here are lists of these commands grouped by general area of coverage:
+
+File Compression
+bunzip2, bzcat, bdiff, bzip2, bzless 
+gunzip, gzexe, gzip, zcat, zless 
+zip, upzip
+xz, unxz, xzcat
+
+File Ownership, Permissions and Attributes
+attr, chgrp, chown, chmod
+
+Files
+awk, basename, cat, col, cp, cpio, csplit, cut, dd, diff, dirname, egrep, expand, file, fgrep, fmt, grep, head, join, less, more, sed, tail, tar
+
+Filesystem
+cd, chroot, df, dirs, du, fdisk, fsck, fuser, ln, ls, mkdir, mv, pushd, popd, rm, rmdir 
+
+Networking
+arp, domainname, finger, ftp, host, hostname, ip, route, ifconfig, netstat 
+
+Job Control
+at, atrm, batch, crontab, exec, exit, ipcs, ipcrm, kill, killall
+
+Expression Evaluation
+bc, dc, eval, expr, factor, false, true
+There are many other commands and utilities that could be added to this list.
+
+
+20 . systemd service units
+
+systemctl start name   --> Starts a service
+
+systemctl stop name  --> Stops a service
+
+systemctl restart name --> Restarts a service
+
+systemctl status name --> Checks whether a service is running
+
+systemctl status name --> Checks whether a service is running
+
+Ex : systemctl status sshd
+
+21 . to watch kernel messages      
+
+sudo tail -f /var/log/messages
+dmesg -w
+
+22. Basic information about active network interfaces on your system is gathered through both the ip utility,
+
+ip -s link
+/sbin/ifconfig
+
+23. Network traffic bound to the machine.
+
+Note you can see the statistical information in abbreviated form by looking at /proc/net/dev, 
+and in one quantity per line display in /sys/class/net/eth0/statistics
+
+ex: ls -l /sys/class/net/enp1s0/statistics/
+
+24.  Networking and Network Interfaces (Cont.)
+To bring a network connection up and assign a static address, you can do:sudo /sbin/ifconfig eth0 up 192.168.1.100
+To bring it up and get it an assigned address from a DHCP server, you can do:
+sudo /sbin/dhclient eth0
+While ifconfig has been used reliably for many years, the ip utility is newer (and far more versatile). On a technical level, it is more efficient because it uses netlink sockets, rather than ioctl system calls.
+ip can be used for a wide variety of tasks. It can be used to display and control devices, routing, policy-based routing, and tunneling. The basic syntax is:
+ip [ OPTIONS ] OBJECT { COMMAND | help }
+
+Some examples:
+Show information for all network interfaces: ip link
+
+Show information for the eth0 network interface:
+ip -s link show eth0
+
+Set the IP address for eth0
+sudo ip addr add 192.168.1.7 dev eth0
+
+Bring eth0 down:
+sudo ip link set eth0 down
+
+Set the MTU to 1480 bytes for eth0
+sudo ip link set eth0 mtu 1480
+
+Set the networking route:
+sudo ip route add 172.16.1.0/24 via 192.168.1.5
+
+25. Static Configuration of a Network Interface
+
+ip addr show eth0
+sudo ip link set eth0 down 
+sudo ip addr add 192.168.1.100 dev eth0 
+sudo ip link set eth0 up
+sudo ip link set eth0 up 
+sudo dhclient eth0
+sudo reboot
+
+26. Process and Load Monitoring Utilities
+
+top  --> Process activity, dynamically updated
+
+uptime --> How long the system is running and the average load
+
+ps  --> Detailed information about processes
+
+pstree --> A tree of processes and their connections
+
+mpstat --> Multiple processor usage
+
+iostat  --> CPU utilization and I/O statistics
+
+sar --> Display and collect information about system activity
+
+numastat  --> Information about NUMA (Non-Uniform Memory Architecture)
+
+strace --> Information about all system calls a process makes
+
+You can simply run a command with strace like this, here we are tracing of all system calls made by the df command.
+
+strace df -h
+
+
+27. Memory Monitoring Utilities
+free --> Brief summary of memory usage
+
+vmstat --> Detailed virtual memory statistics and block I/O, dynamically updated
+
+pmap  --> Process memory map
+
+
+28.
+I/O Monitoring Utilities
+
+iostat --> CPU utilization and I/O statistics
+
+iotop --> I/O statistics including per process
+
+sar --> Display and collect information about system activity
+
+vmstat --> Detailed virtual memory statistics and block I/O, dynamically updated
+
+29. Network Monitoring Utilities
+
+netstat --> Detailed networking statistics
+
+iptraf --> Gather information on network interfaces
+
+tcpdump --> Detailed analysis of network packets and traffic
+
+wireshark --> Detailed network traffic analysis
+
+
+
+
+
+
+
 
 
 
