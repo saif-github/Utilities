@@ -1,0 +1,23 @@
+
+
+Regular Expressions are built using metacharecters
+
+Wildcards
+
+    A quiestion mark (?) means 0 or 1 of the previous element is required.
+    A star (*) means 0 or more of the previous element is required
+    A plus sign (+) means one or more of the previous element is required
+    A period (.) will match a single charecter at that location
+
+Anchors
+    A hat sign (^) will match the begining of a string
+    A dollar sign ($) will match at the end of the string
+
+Containers 
+    Parenthesis are used to group or contain sub-Expressions
+    Square brackets can be used to select a particular set of items
+
+Miscellaneous
+
+    OR is a vertical bar (pipe symbol)
+    A blackslash is used to escape the metacharecters if they are required for the pattren.
