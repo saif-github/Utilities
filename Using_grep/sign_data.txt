@@ -1,0 +1,3 @@
+    A plus sign (+) means one or more of the previous element is required
+    A hat sign (^) will match the begining of a string
+    A dollar sign ($) will match at the end of the string
