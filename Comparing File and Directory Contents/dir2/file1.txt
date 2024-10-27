@@ -1,0 +1,7 @@
+apples
+oranges 
+berries
+bananas
+avocado
+grapes
+cherries

@@ -1,0 +1,8 @@
+01 joe ON,CA
+02 max AB,CA
+03 chandra NY,US
+04 bertha NY,US
+05 rafeena BC,CA
+06 dale MA,US
+07 lana CA,US
+08 Raj CA,US

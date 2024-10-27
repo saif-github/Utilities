@@ -1,0 +1,17 @@
+# the Log file
+Exception in thread "main" java.lang.NumberFormatException: For input string: "101.75"
+  at java.lang.NumberFormatException.forInputString(NumberFormatException.java:85)
+  at java.lang.Integer.parseInt(Integer.java:340)
+  at ExampleCli.parseNumericArgument(ExampleCli.java:78)
+  at ExampleCli.parseCliOptions(ExampleCli.java:33)
+  at ExampleCli.main(ExampleCli.java:24)
+SEVERE: Exception:
+java.io.FileNotFoundException: somefile.txt (No such file or directory)
+  at java.io.FileInputStream.open(Native Method)
+  at java.io.FileInputStream.<init>(FileInputStream.java:117)
+  at java.io.FileInputStream.<init>(FileInputStream.java:121)
+  at java.io.FileReader.<init>(FileReader.java:46)
+  at MyClass.main(MyClass.java:24)
+SEVERE: Exception:
+java.lang.ArithmeticException: / by zero
+  at MyClass.main(MyClass.java:19)
