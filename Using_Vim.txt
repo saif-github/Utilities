@@ -1,0 +1,58 @@
+# on Ubuntu Linux 16.04, the version of vim is vim-tiny. The purpose is to provide the vi command for base Linux installations
+# it contains a minimal version of Vim (compiled with no GUI) and a minimal subset of features (for a small package size)
+# to install a full-blown Vim package:
+sudo apt update
+sudo apt install vim
+
+# usage:  vi [ARGUMENT]... [FILE]...
+
+# you can find help on the web if it's not installed (as in a base Ubuntu OS deployment)
+http://vimhelp.appspot.com/
+
+# Vim is composed mainly of two modes: visual and editing, the visual mode is for viewing text and using commands
+# to enter editing mode, press 'i' to insert and 'a' to append
+# to return to visual mode and access all the menu-type functions, press the “Escape” key
+# to move the cursor within the body of the file (whether in visual or editing mode), you can use the keyboard arrows
+# you can also use the h,j,k,and l keys: h is left, l is right, k is up, j is down
+# you can type a number before any of these commands and it will be executed that number of times
+# eg: 5x will delete five consecutive characters and 5p will paste three times
+# Common visual mode commands
+• x        - delete a character
+• u        - undo an action (the equivalent of Ctrl+z)
+• dd       - delete a line
+• dw       - delete a word
+• yy       - copy a line
+• yw       - copy a word
+• p        - paste the previously deleted or copied line or word
+• e        - move to the next word (faster than just moving with the arrow keys)
+• r        - replace a letter (press r, then the new letter)
+
+# you can navigate by jumping to a specific location within a file
+# you can type a number before any of these commands and it will be executed that number of times
+# eg: 5x will delete five consecutive characters and 5p will paste three times
+• G        - to jump to the end of a file use G
+• gg       - to jump to the beginning of a file use gg
+• 5gg      - to go to the specific line in a file where 'n' is the line number eg: 100gg lands the cursor on line 100
+
+# for searching the open file:
+• /pattern   - search forward for pattern
+• ?pattern   - search backward
+• n          - repeat forward search
+• N          - repeat backward
+• *          - search for word currently under cursor
+
+# very useful search and replace:
+• :%s/search_for_this/replace_with_this/    - search whole file and replace
+• :%s/search_for_this/replace_with_this/c   - confirm each replace
+
+
+The basic steps to perform a search in Vim are as follows:
+Press /.
+Type the search pattern.
+Press Enter to perform the search.
+Press n to find the next occurrence or N to find the previous occurrence.
+
+shift + arrow keys for faster movement in VIM editors
+
+• NOTE: on the internet use your search engine to search 'vi vim graphical cheat sheet'
+# this is a new line
